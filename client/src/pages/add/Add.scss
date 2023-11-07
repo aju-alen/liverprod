@@ -1,0 +1,85 @@
+.add {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+
+    h1 {
+      width: max-content;
+      margin-bottom: 30px;
+      color: gray;
+      font-weight: 300;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: space-between;
+      gap: 100px;
+
+      label {
+        color: gray;
+        font-size: 18px;
+      }
+
+      .info,
+      .details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+
+        input,
+        select,
+        textarea {
+          padding: 20px;
+        }
+        .images{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+          button{
+            width: 150px;
+          }
+          .imagesInputs{
+            display: flex;
+          }
+        }
+        .add{
+          display: flex;
+          justify-content: flex-start;
+        }
+        button {
+          border: none;
+          padding: 20px;
+          color: white;
+          font-weight: 500;
+          font-size: 18px;
+          background-color: #1dbf73;
+          cursor: pointer;
+        }
+        .addedFeatures{
+          display: flex;
+          gap: 20px;
+          .item{
+            display: flex;
+            gap: 20px;
+          }
+          button{
+            height: 30px;
+            font-size: 12px;
+            font-weight: 400;
+            background: transparent;
+            color: burlywood;
+            border: 1px solid yellow;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
