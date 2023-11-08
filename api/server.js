@@ -37,8 +37,8 @@ app.use('/api/orders',orderRoute)
 app.use('/api/reviews',reviewRoute)
 
 app.use(errorHandler)
-
-app.listen(8800,()=>{
+const PORT = process.env.PORT || 3001
+app.listen(PORT,()=>{
     connect()
-    console.log(`server listening at port 8800`);
+    console.log(`server listening at port ${PORT}`);
 })
