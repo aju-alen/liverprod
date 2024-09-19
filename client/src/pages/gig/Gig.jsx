@@ -1,6 +1,5 @@
 import React from "react";
 import "./Gig.scss";
-import { Slider } from "infinite-react-carousel/lib";
 import { useQuery } from "@tanstack/react-query";
 import { newRequst } from "../../utils/newRequest";
 import { Link, useParams } from "react-router-dom";
@@ -51,10 +50,7 @@ function Gig() {
               </div>
             }
           </div>)}
-          <Slider slidesToShow={1} arrowsScroll={1} className="slider">
             {data.images.map(image => (<img key={image} src={image} alt="" />))}
-
-          </Slider>
           <h2>About This Gig</h2>
           <p>
             {data.desc}
