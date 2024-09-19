@@ -25,7 +25,7 @@ const connect = async()=>{
       }
 }
 app.use(express.static('dist'))
-app.use(cors({credentials:true,origin:'http://localhost:5173'}))
+app.use(cors({credentials:true,origin:['http://localhost:5173','https://liverprod.onrender.com']}))
 app.use(express.json())
 app.use(cookieParser())
 

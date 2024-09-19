@@ -1,6 +1,6 @@
 import axios from 'axios'
 
  export const newRequst = axios.create({
-    baseURL:'http://localhost:3001/api/',
+    baseURL:'https://liverprod-api.onrender.com/api/',
     withCredentials:true
 })
